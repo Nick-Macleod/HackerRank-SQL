@@ -1,0 +1,10 @@
+/*
+You don't need to find min and max, simply order by that value and set limit to 1.
+*/
+
+SELECT CITY, LENGTH(CITY) FROM STATION
+ORDER BY LENGTH(CITY) ASC, CITY
+LIMIT 1;
+SELECT CITY, LENGTH(CITY) FROM STATION
+ORDER BY LENGTH(CITY) DESC, CITY 
+LIMIT 1

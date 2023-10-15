@@ -1,0 +1,6 @@
+/*
+Note that when using count, you do not need to nest queries, it is one query where you tell it to count and then at the end tell it the table.
+Second note, distinct for count distinct goes INSIDE the COUNT function.
+*/
+
+SELECT (COUNT(CITY)-COUNT(DISTINCT CITY)) FROM STATION

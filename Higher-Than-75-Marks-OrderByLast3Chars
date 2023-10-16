@@ -1,0 +1,9 @@
+/*
+To order by the last 3 letters (or characters) of something, we use the function RIGHT.
+RIGHT acts on a string (1st argument), with an integer parameter n, it then gives you 
+n characters from the string from right-to-left.
+*/
+
+SELECT NAME FROM STUDENTS
+WHERE Marks>75
+ORDER BY RIGHT(NAME,3), ID ASC

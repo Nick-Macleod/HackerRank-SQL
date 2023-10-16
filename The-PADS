@@ -1,5 +1,5 @@
 /*
-Note the use of LEFT, CONCAT, and COUNT. Provides a nice example of GROUP BY.
+Note the use of LEFT, CONCAT, LOWER, and COUNT. Provides a nice example of GROUP BY.
 */
 
 SELECT CONCAT(Name, '(',LEFT(Occupation,1),')') from OCCUPATIONS

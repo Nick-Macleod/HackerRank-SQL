@@ -1,0 +1,9 @@
+/*
+Note the use of LEFT, CONCAT, and COUNT. Provides a nice example of GROUP BY.
+*/
+
+SELECT CONCAT(Name, '(',LEFT(Occupation,1),')') from OCCUPATIONS
+ORDER BY Name;
+SELECT CONCAT('There are a total of ',count(Occupation),' ',LOWER(Occupation),'s.') from OCCUPATIONS
+GROUP BY Occupation
+ORDER BY COUNT(Occupation) ASC, Occupation
